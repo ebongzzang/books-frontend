@@ -14,6 +14,11 @@ const thirdPartyVendors = [
   'stats.g.doubleclick.net',
   'staticxx.facebook.com',
   'connect.facebook.net',
+  't1.daumcdn.net',
+  'static.ads-twitter.com',
+  'platform.twitter.com',
+  'analytics.twitter.com',
+  'bc.ad.daum.net',
 ];
 
 const whiteList = [

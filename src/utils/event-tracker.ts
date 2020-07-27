@@ -1,6 +1,6 @@
 import { DeviceType, Tracker } from '@ridi/event-tracker';
 import {
-  FB_KEYS, GA_KEY, GTM_KEY, SendEventType,
+  FB_KEYS, GA_KEY, GTM_KEY, KAKAO_KEY, SendEventType, TWITTER_KEYS,
 } from 'src/constants/eventTracking';
 import { getDeviceType } from 'src/hooks/useDeviceType';
 import { localStorage } from 'src/utils/storages';
@@ -32,6 +32,10 @@ const tracker = (function createTracker() {
       tagManagerOptions: {
         trackingId: GTM_KEY,
       },
+      kakaoOptions: {
+        trackingId: KAKAO_KEY,
+      },
+      twitterOptions: TWITTER_KEYS,
       // eslint-disable-next-line no-process-env
       development: !process.env.IS_PRODUCTION,
       throttleWait: 5000,
